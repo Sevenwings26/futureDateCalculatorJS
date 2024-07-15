@@ -9,12 +9,16 @@
   <body>
     <div class="container">
       <h1>Futurist</h1>
-      <p>Calculate future date in number, e.g., in 7 days time.</p>
-      <label for="days">Enter the number of days:</label>
-      <input type="number" id="days" placeholder="Number of days" />
+      <p class="theme">Calculate Future Date in number</p>
+      <input type="number" id="days" placeholder="Enter the number of days" />
       <p id="result" class="output"></p>
       <button onclick="calculateFutureDate()">Calculate</button>
-      <button onclick="resetForm()">Check another date</button>
+      <!-- <button onclick="resetForm()">Check another date</button> -->
+
+      <p class="theme">Calculate Days to a specific date.</p>
+      <input type="date" id="selectedDate" />
+      <p id="dateResult" class="output"></p>
+      <button onclick="calculateDaysUntil()">Calculate Days Until</button>
       <button onclick="exitProgram()">Exit</button>
     </div>
 

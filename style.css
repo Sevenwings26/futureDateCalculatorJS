@@ -1,10 +1,11 @@
+
 body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
 }
 
 .container {
@@ -15,12 +16,30 @@ body {
 }
 
 h1 {
-    margin-bottom: 5px;
     color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: glowing 1.5s infinite alternate;
+    text-align: center;
+    margin: 20px 0;
 }
+
+@keyframes glowing {
+    from {
+        /* text-shadow: 0 0 10px #007BFF, 0 0 20px #007BFF, 0 0 30px #007BFF, 0 0 40px #007BFF, 0 0 50px #007BFF, 0 0 60px #007BFF, 0 0 70px #007BFF; */
+        text-shadow: 0 0 10px #b3d5fad2, 0 0 20px #b3d5fad2, 0 0 30px #b3d5fad2, 0 0 40px #b3d5fad2, 0 0 50px #b3d5fad2, 0 0 60px #b3d5fad2, 0 0 70px #b3d5fad2;
+    }
+    to {
+        text-shadow: 0 0 20px #b3d5fad2, 0 0 30px #b3d5fad2, 0 0 40px #b3d5fad2, 0 0 50px #f7f8f8, 0 0 60px #f3f6fa, 0 0 70px #e9ecf0, 0 0 80px #eff3f7;
+    }
+}
+
+.theme{
+    color: #007BFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 p {
     margin-top: 10px;
-    color: #007BFF;
 }
 
 .output{
@@ -33,22 +52,18 @@ p {
     margin-bottom: 0.6rem;
 }
 
-label {
-    display: block;
-    margin: 10px 0;
-    color: #0056b3;
-}
-
 input {
     padding: 10px;
     width: 80%;
-    margin: 10px -10px;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
+
+
 button {
-    padding: 10px 20px;
+    padding: 6px 10px;
     margin: 10px;
     border: none;
     border-radius: 5px;
